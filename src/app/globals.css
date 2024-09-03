@@ -1,0 +1,92 @@
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+
+    :root {
+      --foreground-rgb: 0, 0, 0;
+      --background-start-rgb: 255, 255, 255;
+      --background-end-rgb: 240, 240, 240;
+    
+      --primary-glow: radial-gradient(rgba(1, 65, 255, 0.2), rgba(1, 65, 255, 0));
+      --secondary-glow: linear-gradient(
+        to bottom right,
+        rgba(1, 65, 255, 0.1),
+        rgba(1, 65, 255, 0),
+        rgba(1, 65, 255, 0.15)
+      );
+    
+      --tile-start-rgb: 245, 248, 250;
+      --tile-end-rgb: 230, 235, 240;
+      --tile-border: conic-gradient(
+        #00000020,
+        #00000010,
+        #00000008,
+        #00000005,
+        #00000005,
+        #00000005,
+        #00000020
+      );
+    
+      --callout-rgb: 255, 255, 255;
+      --callout-border-rgb: 200, 200, 200;
+      --card-rgb: 230, 230, 230;
+      --card-border-rgb: 180, 180, 180;
+    }
+    
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --foreground-rgb: 0, 0, 0;
+        --background-start-rgb: 245, 245, 245;
+        --background-end-rgb: 230, 230, 230;
+    
+        --primary-glow: radial-gradient(rgba(1, 65, 255, 0.3), rgba(1, 65, 255, 0));
+        --secondary-glow: linear-gradient(
+          to bottom right,
+          rgba(1, 65, 255, 0.15),
+          rgba(1, 65, 255, 0),
+          rgba(1, 65, 255, 0.2)
+        );
+    
+        --tile-start-rgb: 250, 250, 250;
+        --tile-end-rgb: 235, 235, 235;
+        --tile-border: conic-gradient(
+          #00000030,
+          #00000020,
+          #00000010,
+          #00000008,
+          #00000008,
+          #00000008,
+          #00000030
+        );
+    
+        --callout-rgb: 240, 240, 240;
+        --callout-border-rgb: 210, 210, 210;
+        --card-rgb: 220, 220, 220;
+        --card-border-rgb: 190, 190, 190;
+      }
+    }
+    
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: #ffff;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+}

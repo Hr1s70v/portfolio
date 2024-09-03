@@ -1,0 +1,125 @@
+/* Header styling */
+.header {
+  background-color: #191919;
+  height: 25rem; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text */
+  padding-top: 3rem; /* Add some padding */
+  
+}
+
+/* Infobox container */
+.infobox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Profile image styling */
+.profileImage {
+  border-radius: 50%;
+  width: 100px; /* Fixed width */
+  height: 100px; /* Fixed height */
+  background-color: white;
+  border: 0.1vw black solid;
+}
+
+/* Info box styling */
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Text styling */
+.headertext {
+  font-size: 2rem;
+  margin: 10px 0;
+  color: white;
+}
+
+.typwriter {
+  font-size: 1.5rem;
+  color: #00b4d8;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.about {
+  width: 100%; /* Full width of container */
+  margin-top: 1rem; /* Margin top */
+}
+
+.abouttext {
+  color: white;
+}
+
+/* Ensure skill section is adjusted properly */
+.skills {
+  height: 80rem;
+  padding: 2rem;
+  background-color: #111111;
+}
+
+.skillsh2{
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.langt{
+  padding-left: 0.4rem;
+}
+
+/* Make sure skill categories and skills are styled consistently */
+.category {
+  margin-bottom: 2rem;
+}
+
+.skillst {
+  color: white;
+  font-size: 1.3rem;
+}
+
+/* Flex items inside skillGrid */
+.skillGrid {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping */
+  gap: 1rem;
+  width: 100%; /* Full width of container */
+}
+
+/* Skill item styling */
+.languages {
+  background-color: #212121;
+  color: #00b4d8;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.5rem;
+  box-sizing: border-box;
+  min-width: 120px;
+  flex: 1 1 auto;
+  max-width: 200px;
+}
+
+/* Media Queries for responsive design */
+@media (max-width: 767px) {
+  .header {
+    height: 25rem; /* Adjust height based on content */
+    padding: 2rem; /* Padding around content */
+  }
+  .abouttext{
+    width: 25rem;
+    text-align: center;
+  }
+}
